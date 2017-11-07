@@ -4,7 +4,6 @@ import sys
 
 Total = 0
 
-
 for line in sys.stdin:
     data = line.strip()
     if data == "" or data is None:

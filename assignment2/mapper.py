@@ -7,5 +7,3 @@ for line in sys.stdin:
     if len(data) != 10:
 	    continue
     print data[6]
-
-

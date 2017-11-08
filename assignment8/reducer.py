@@ -11,15 +11,15 @@ for line in sys.stdin:
         # Something has gone wrong. Skip this line.
         continue
 
-    thisKey, thisCount = data_mapped
+    thisKey, thispath = data_mapped
 
     if oldKey and oldKey != thisKey:
         print oldKey, "\t", countTotal
-        oldKey = thisKey;
+        oldKey = thispath;
         countTotal = 0
 
-    oldKey = thisKey
-    countTotal += int(thisCount)
+    oldKey = thispath
+    countTotal += 1
 
 if oldKey != None:
     print oldKey, "\t", countTotal

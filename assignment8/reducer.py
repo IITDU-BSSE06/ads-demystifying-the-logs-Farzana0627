@@ -13,7 +13,7 @@ for line in sys.stdin:
 
     thisKey, thispath = data_mapped
 
-    if oldKey and oldKey != thisKey:
+    if oldKey and oldKey != thispath:
         print oldKey, "\t", countTotal
         oldKey = thispath;
         countTotal = 0

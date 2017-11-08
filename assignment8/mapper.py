@@ -6,5 +6,7 @@ for line in sys.stdin:
   	data = line.strip().split(" ")
     	if len(data) !=10:
 		continue 
-	print data[6] 
-		
+	path= data[6]
+	filename = path.strip().split("/")[-1:]
+		print "{0}\t{1}".format(filename, path)
+	
